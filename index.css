@@ -10,7 +10,6 @@
 
 .sideNav {
     list-style: none;
-
 }
 .sideNav li{
     /* background: #000; */
@@ -18,15 +17,22 @@
     border-radius: 5px;
     color: white;
 }
+.sideNav li:hover{
+    background-image: linear-gradient(to right, rgb(141, 2, 31), rgb(141, 2, 31), rgb(203, 121, 0));
+}
+
 .sideNav .fa{
     padding: .5rem;
     border-radius: 5px;
-    background-color: blue;
+    background-image: linear-gradient(to right, rgb(141, 2, 31), rgb(141, 2, 31), rgb(203, 121, 0));
 }
 
 .navLink{
     text-decoration: none;
-    /* color: black; */
+    color: black;
+}
+.navLink:hover{
+    color: white;
 }
 .main-card{
     background-image: linear-gradient(to right, rgb(141, 2, 31), rgb(141, 2, 31), rgb(203, 121, 0));
