@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="index.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <!-- Container wrapper -->
+        <i class="fa-solid fa-bars-sort"></i>
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <i data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
+                class="fas fa-bars"></i>
+            <!-- Toggle button -->
+            <img class="logo" src="./assets/jamavent.png" alt="">
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <a class="text-reset me-3" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- Notifications -->
+                <div class="dropdown">
+                    <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                        id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                            alt="Black and White Portrait of a Man" loading="lazy" /> </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                        <li>
+                            <a class="dropdown-item" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <img class="offcanvas-title" id="offcanvasExampleLabel" src="./assets/jamavent.png" alt="">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <ul class="sideNav">
+                <li class="p-2">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <a class="navLink mx-2" href="#">Dashboard</a>
+                </li>
+                <li class="p-2">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <a class="navLink mx-2" href="#">Profile</a>
+                </li>
+                <li class="p-2">
+                    <i class="fa fa-chart-line" aria-hidden="true"></i>
+                    <a class="navLink mx-2" href="#">Transaction</a>
+                </li>
+                <li class="p-2">
+                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <a class="navLink mx-2" href="#">Buy Data</a>
+                </li>
+                <li class="p-2">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a class="navLink mx-2" href="#">Buy Airtime</a>
+                </li>
+                <li class="p-2">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <a class="navLink mx-2" href="#">Settings</a>
+                </li>
+                <li class="p-2">
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                    <a class="navLink mx-2" href="#">Log Out</a>
+                </li>
+            </ul>
+            </ul>
+
+        </div>
+    </div>
+    <!--- sidebar --->
+
+    <div class="container">
+
+        <!--- cards --->
+
+        <div class="card mt-3 main-card">
+            <div class="card-body bg-gradient">
+                <div class="d-flex justify-content-between circles">
+                    <h3 class="text-white font-20 float-start">Welcome 👋</h3>
+                    <a class="btn bg-white" href="#"><i class="fas fa-wallet"></i> Fund Wallet</a>
+                </div>
+                <div class="texts mt-5">
+                    <p class="text-center text-white text-bold"><i class="fa-solid fa-naira-sign"></i> 0.00</p>
+                    <p class="text-center text-secondary">Wallet Ballance</p>
+                </div>
+                <div class="d-flex justify-content-between mt-5">
+                    <p class="text-center text-white text-bold">Firstname</p>
+                    <p class="text-center text-white text-bold">Lastname</p>
+                </div>
+                <hr class="hr" />
+                <div class="d-flex">
+                    <img src="./assets/notification.png" class="notification mb-3" alt="">
+                    <marquee class="text-white text-center" style="font-size: 12px;" scrollamount="3">Dear Bosses. This
+                        is to inform you that GLO is experiencing a general downtime. This is affecting onlytheir *data*
+                        at the moment. We will keep you updated!</marquee>
+                </div>
+                <hr class="hr" />
+                <div class="d-flex justify-content-between mb-3 align-content-center">
+                    <p class="text-white status">Status: <span class="bg-danger rounded p-1">not verified <i
+                                class="fa-solid fa-triangle-exclamation text-warning"></i></span></p>
+                    <div class="d-flex justify-content-center">
+                        <img src="./assets/mtn.png" class="rounded-circle" alt="" style="width: 40px; height: 40px" />
+                        <img src="./assets/glo.png" class="rounded-circle" alt=""
+                            style="width: 40px; height: 40px; margin-left: -9px" />
+                        <img src="./assets/airtel.png" class="rounded-circle" alt=""
+                            style="width: 40px; height: 40px; margin-left: -9px" />
+                        <img src="./assets/9mobile.png" class="rounded-circle bg-white" alt=""
+                            style="width: 40px; height: 40px; margin-left: -9px" />
+                    </div>
+                    <img src="http://randomuser.me/api/portraits/men/10.jpg" class="rounded-circle" alt=""
+                        style="width: 40px; height: 40px;" />
+
+                </div>
+                <hr class="hr" />
+                <div class="d-flex justify-content-between">
+                    <a href="#">
+                        <img src="./assets/google_play_btn.png" class="google" alt="">
+                    </a>
+
+                    <a class="rounded-sm btn agent mt-2" href="#">👉 Become our agent 🚀</a>
+                </div>
+            </div>
+        </div>
+
+        <!--- main cards --->
+
+        <!--- cards --->
+        <div class="row">
+            <div class="col-md-3  mt-2">
+               <a href="#" style="text-decoration: none; color: black;">
+                 <div class="card">
+                    <div class="card-body">
+                        <h6 class="text-center">Data Topup</h6>
+                        <img src="./assets/data.jpg" class="d-block m-auto" alt="" style="width: 67px;">
+                    </div>
+                </div>
+               </a>
+            </div>
+            <div class="col-md-3  mt-2">
+               <a href="#" style="text-decoration: none; color: black;">
+                 <div class="card">
+                    <div class="card-body">
+                        <h6 class="text-center">Airtime Topup</h6>
+                        <img src="./assets/airtime.svg" class="d-block m-auto" alt="" style="width: 75px;">
+                    </div>
+                </div>
+               </a>
+            </div>
+            <div class="col-md-3  mt-2">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <div class="card">
+                    <div class="card-body">
+                        <h6 class="text-center">Result Checker</h6>
+                        <img src="./assets/graduation-cap.png" class="d-block m-auto" alt="" style="width: 100px;">
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3  mt-2">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <div class="card">
+                    <div class="card-body">
+                        <h6 class="text-center">Spectranet</h6>
+                        <img src="./assets/spectranet-device.png" class="d-block m-auto" alt="" style="width: 100px;">
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-3  mt-2">
+               <a href="#" style="text-decoration: none; color: black;">
+                 <div class="card">
+                    <div class="card-body">
+                        <h6 class="text-center">Data Topup</h6>
+                        <img src="./assets/recharge-card-printer.png" class="d-block m-auto" alt="" style="width: 80px;">
+                    </div>
+                </div>
+               </a>
+            </div>
+            <div class="col-md-3  mt-2">
+               <a href="#" style="text-decoration: none; color: black;">
+                 <div class="card">
+                    <div class="card-body">
+                        <h6 class="text-center">Airtime Topup</h6>
+                        <img src="./assets/smile.png" class="d-block m-auto" alt="" style="width: 70px;">
+                    </div>
+                </div>
+               </a>
+            </div>
+            <div class="col-md-3  mt-2">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <div class="card">
+                    <div class="card-body">
+                        <h6 class="text-center">Result Checker</h6>
+                        <img src="./assets/graduation-cap.png" class="d-block m-auto" alt="" style="width: 100px;">
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3  mt-2">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <div class="card">
+                    <div class="card-body">
+                        <h6 class="text-center">Spectranet</h6>
+                        <img src="./assets/spectranet-device.png" class="d-block m-auto" alt="" style="width: 100px;">
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <!--- cards --->
+    </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
