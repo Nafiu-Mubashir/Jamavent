@@ -89,6 +89,9 @@
     width: 250px; 
     height: 50px !important;
 }
+.electricity-text{
+    width: 35%;
+}
 
 
 @media (max-width: 700px) {
@@ -124,5 +127,8 @@
         border: 1px solid rgb(255, 152, 0); 
         width: 250px; 
         height: 26px !important;
+    }
+    .electricity-text{
+        width: 100%;
     }
 }
