@@ -93,6 +93,27 @@
     width: 35%;
 }
 .cable{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./assets/images.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.airtime{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./assets/images\ \(2\).jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.elect{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./assets/images\ \(1\).jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.cables{
     font-size: 12px;
 }
 .fa-copy{
@@ -156,7 +177,7 @@
     #bulk-sms a{
         font-size: 10px;
     }
-    .cable{
+    .cables{
         font-size: 12px;
     }
     .service h6{

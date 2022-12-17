@@ -6,5 +6,5 @@ const copy = () => {
     navigator.clipboard.writeText(copyText);
   
     // Alert the copied text
-    alert("Copied the text: " + copyText);
+    alert("Link copied to clipboard");
   }
