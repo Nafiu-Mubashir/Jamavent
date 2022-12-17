@@ -132,6 +132,27 @@
 .refers{
     font-size: 13px;
 }
+.styles-module_whatsappButton__IWx9V {
+    align-items: center;
+    background-color: #25d366;
+    border-radius: 50%;
+    bottom: 2rem;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 15%);
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    position: fixed;
+    right: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 60px;
+    padding: 10px;
+    /* color: white; */
+}
+
 
 
 @media (max-width: 700px) {
